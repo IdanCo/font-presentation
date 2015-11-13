@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family: Metric;
+  src: url(MetricWeb-Regular.woff) format("woff")
+}
+@font-face {
+  font-family: Metric;
+  src: url(MetricWeb-Bold.woff) format("woff");
+  font-weight: 700
+}
+@font-face {
+  font-family: Metric;
+  src: url(MetricWeb-Semibold.woff) format("woff");
+  font-weight: 600
+}
+@font-face {
+  font-family: Metric;
+  src: url(MetricWeb-Light.woff) format("woff");
+  font-weight: 100
+}

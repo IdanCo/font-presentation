@@ -1,0 +1,178 @@
+$color-primary: #01A982;
+$color-blue-slate: #425563;
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Metric', sans-serif;
+  color: #e6edeb;
+  background: radial-gradient(ellipse at center,  lighten($color-blue-slate, 20%) 0%,lighten($color-blue-slate, 10%) 47%,$color-blue-slate 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+#opening {
+  .row {
+    padding-top: 2rem;
+  }
+
+  .icon-hplogo {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    color: $color-primary;
+    font-size: 10rem;
+  }
+
+}
+
+#who-am-i {
+  img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    //opacity: 0;
+  }
+
+  &.present {
+    img {
+      //animation-duration: 1s;
+      //animation-fill-mode: both;
+      //animation-name: fadeIn;
+    }
+  }
+
+  &.past {
+    img {
+      //opacity: 1;
+    }
+  }
+}
+
+#icon-font {
+  h1 {
+    margin-top: 12rem;
+  }
+
+  &.future {
+    .icon {
+      transform: scale3d(0, 0, 0);
+    }
+  }
+
+  &.present {
+    .icon {
+      animation-name: bounceIn;
+    }
+  }
+
+  .icon {
+    opacity: 0;
+    position: absolute;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    font-size: 2rem;
+    color: $color-primary;
+    &.first-wave {
+      animation-delay: 0.5s;
+    }
+    &.second-wave {
+      animation-delay: 1s;
+    }
+    &.third-wave {
+      animation-delay: 1.5s;
+    }
+    &.big {
+      font-size: 3rem;
+    }
+    &.huge {
+      font-size: 4rem;
+    }
+  }
+
+  &.present, &.past {
+    .icon {
+      opacity: 1;
+    }
+  }
+
+  .icon-favorit {
+    left: 21rem;
+    top: -5rem;
+  }
+  .icon-cloud {
+    left: 24rem;
+    top: 5rem;
+  }
+  .icon-antena {
+    left: 22rem;
+    top: 10rem;
+  }
+  .icon-announcement {
+    left: 7rem;
+    top: 3rem;
+  }
+  .icon-alarm {
+    left: 12rem;
+    top: -5rem;
+  }
+  .icon-feamle {
+    left: 5rem;
+    top: -2rem;
+  }
+  .icon-group {
+    left: 12rem;
+    top: 6rem;
+  }
+  .icon-mail {
+    left: 17rem;
+    top: 5rem;
+  }
+  .icon-search {
+    left: 30rem;
+    top: -4rem;
+  }
+  .icon-settings {
+    left: 25rem;
+    top: -4rem;
+  }
+  .icon-threats {
+    left: 30rem;
+    top: 4rem;
+  }
+}
+
+#why {
+  .try {
+    font-size: 64px;
+    position: absolute;
+    top: -0.5em;
+    left: 0em;
+
+    transform:         translateZ(20px);
+  }
+
+  h1 {
+    font-size: 190px;
+    margin-left: 15rem;
+
+    transform:         translateZ(50px);
+  }
+
+  .footnote {
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+}
