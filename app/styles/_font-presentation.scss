@@ -1,5 +1,6 @@
 $color-primary: #01A982;
 $color-blue-slate: #425563;
+$color-hell: #5c0a0a;
 
 html {
   font-size: 20px;
@@ -8,7 +9,25 @@ html {
 body {
   font-family: 'Metric', sans-serif;
   color: #e6edeb;
+  transition: background-color 1000ms linear;
   background: radial-gradient(ellipse at center,  lighten($color-blue-slate, 20%) 0%,lighten($color-blue-slate, 10%) 47%,$color-blue-slate 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#hell-background {
+  background: radial-gradient(ellipse at center,  lighten($color-hell, 30%) 0%,lighten($color-hell, 10%) 47%,$color-hell 100%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
+
+body.impress-on-pixelation {
+  #hell-background {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -61,7 +80,7 @@ strong {
 }
 
 #icon-font {
-  h1 {
+  .row {
     margin-top: 12rem;
   }
 
@@ -86,13 +105,13 @@ strong {
     font-size: 2rem;
     color: $color-primary;
     &.first-wave {
-      animation-delay: 0.5s;
+      animation-delay: 0.75s;
     }
     &.second-wave {
       animation-delay: 1s;
     }
     &.third-wave {
-      animation-delay: 1.5s;
+      animation-delay: 1.25s;
     }
     &.big {
       font-size: 3rem;
@@ -174,5 +193,51 @@ strong {
   .footnote {
     margin-left: 5rem;
     font-size: 2rem;
+  }
+}
+
+#mona {
+  img {
+    border: 1rem solid $color-primary;
+    width: 100%;
+  }
+  span {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+  }
+  .footnote {
+    padding-top: 18rem;
+  }
+}
+
+#pixelation {
+  h1 {
+    font-family: 'silkscreennormal';
+    font-size: 80px;
+    margin-top: 8rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#microsoft {
+  font-size: 30px;
+  div {
+    padding-left: 10rem;
+    padding-top: 5rem;
+  }
+}
+
+#andy {
+  img {
+    width: 100%;
+  }
+}
+
+#juggle {
+  img {
+    width: 100%;
   }
 }
