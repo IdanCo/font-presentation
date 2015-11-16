@@ -1,0 +1,140 @@
+#font1.present {
+  #flip-aa {
+    opacity: 1;
+    animation: flip-font-rev 0.4s ease-in 10.2s;
+    animation-fill-mode: forwards;
+  }
+  #flip-ba {
+    animation: flip-font 0.4s ease-in 10.4s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ca {
+    animation: flip-font 0.4s ease-in 10.6s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-da {
+    animation: flip-font 0.4s ease-in 10.8s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ea {
+    animation: flip-font 0.4s ease-in 11s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-fa {
+    animation: flip-font 0.4s ease-in 11.2s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ga {
+    animation: flip-font 0.4s ease-in 11.4s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ha {
+    animation: flip-font 0.4s ease-in 11.6s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ia {
+    animation: flip-font 0.4s ease-in 11.8s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ja {
+    animation: flip-font 0.4s ease-in 12s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ka {
+    animation: flip-font 0.4s ease-in 12.2s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-la {
+    animation: flip-font 0.4s ease-in 12.4s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-ma {
+    animation: flip-font 0.4s ease-in 12.6s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-na {
+    animation: flip-font 0.4s ease-in 12.8s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-oa {
+    animation: flip-font 0.4s ease-in 13s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-pa {
+    animation: flip-font 0.4s ease-in 13.2s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-1a {
+    animation: flip-font 0.4s ease-in 13.4s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-2a {
+    animation: flip-font 0.4s ease-in 13.6s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-3a {
+    animation: flip-font 0.4s ease-in 13.8s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-4a {
+    animation: flip-font 0.4s ease-in 14s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-5a {
+    animation: flip-font 0.4s ease-in 14.2s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-6a {
+    animation: flip-font 0.4s ease-in 14.4s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-7a {
+    animation: flip-font 0.4s ease-in 14.6s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-8a {
+    animation: flip-font 0.4s ease-in 14.8s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-9a {
+    animation: flip-font 0.4s ease-in 15s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-0a {
+    animation: flip-font 0.4s ease-in 15.2s 1;
+    animation-fill-mode: backwards;
+  }
+  #flip-icon {
+    animation: flip-font 0.4s ease-in 15.4s 1;
+    animation-fill-mode: forwards;
+    margin-top: 80px;
+  }
+}
+
+@keyframes flip-font {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes flip-font-rev {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes color-fun {
+  0% { color: rgba(255, 0, 0, 1); }
+  15% { color: rgba(255, 255, 0, 1); }
+  30% { color: rgba(0, 255, 0, 1); }
+  50% { color: rgba(0, 255, 255, 1); }
+  65% { color: rgba(0, 0, 255, 1); }
+  80% { color: rgba(255, 0, 255, 1); }
+  100% { color: #01A982; }
+}
+
+@keyframes spin-fun {
+  0% { transform: rotate(90deg); }
+  10% { transform: rotate(70deg);}
+  100% { transform: rotate(2520deg); }
+}

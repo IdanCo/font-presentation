@@ -241,3 +241,128 @@ strong {
     width: 100%;
   }
 }
+
+#font1 {
+  span {
+    font-size: 350px;
+    position: absolute;
+    opacity: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    top:-100px;
+    text-transform: capitalize;
+  }
+  #flipper {
+    animation: zoomIn 15s ease-in 0s 1;
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
+}
+
+#font2 {
+  .row {
+    height: 380px;
+
+  }
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 380px;
+    font-size: 350px;
+  }
+  .first-icon {
+    background: -webkit-gradient(linear,  left top,  right top,
+      color-stop(0%, rgba(255, 255, 0, 1)),
+      color-stop(30%, rgba(0, 255, 0, 1)),
+      color-stop(50%, rgba(0, 255, 255, 1)),
+      color-stop(65%, rgba(0, 0, 255, 1)),
+      color-stop(80%, rgba(255, 0, 255, 1)),
+      color-stop(100%, rgba(255, 0, 0, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .css-code {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    background: white;
+    color: $color-primary;
+    padding: 1rem;
+    font-size: 1.5rem;
+    span {
+      color: gray;
+    }
+    .nekudapsik {
+      color: #F04953;
+    }
+  }
+
+  &.present {
+    .first-icon {
+      animation: fadeOut 0.5s ease-out 5s 1;
+      animation-fill-mode: forwards;
+    }
+    .second-icon {
+      animation: color-fun 6s ease-out 5s 1;
+      animation-fill-mode: forwards;
+    }
+    .css-code {
+      animation: zoomInDown 1.5s ease-out 10s 1;
+      animation-fill-mode: both;
+    }
+
+  }
+
+}
+
+#font3 {
+  .icon {
+    transform: rotate(90deg);
+    font-size: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    font-size: 350px;
+    display: block;
+    padding-left: 27px;
+  }
+  .row {
+    height: 400px;
+  }
+  .css-code {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    background: white;
+    color: $color-primary;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: gray;
+    .css-function {
+      color: #FFD144;
+    }
+    .css-value {
+      color: #8C6694;
+    }
+    .nekudapsik {
+      color: #F04953;
+    }
+  }
+  &.present {
+    .icon {
+      animation: spin-fun 10s cubic-bezier(.1,.1,.04,1) 5s 1;
+      animation-fill-mode: both;
+    }
+    .css-code {
+      animation: zoomInDown 1.5s ease-out 17s 1;
+      animation-fill-mode: both;
+    }
+  }
+}
