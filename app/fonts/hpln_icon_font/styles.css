@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "hpln";
-  src:url("fonts/hpln.eot");
-  src:url("fonts/hpln.eot?#iefix") format("embedded-opentype"),
-    url("fonts/hpln.woff") format("woff"),
-    url("fonts/hpln.ttf") format("truetype"),
-    url("fonts/hpln.svg#hpln") format("svg");
+  src:url("hpln.eot");
+  src:url("hpln.eot?#iefix") format("embedded-opentype"),
+    url("hpln.woff") format("woff"),
+    url("hpln.ttf") format("truetype"),
+    url("hpln.svg#hpln") format("svg");
   font-weight: normal;
   font-style: normal;
 

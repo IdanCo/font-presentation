@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="fonts/metric/fonts.css">
     <link rel="stylesheet" href="fonts/hpln_icon_font/styles.css">
+    <link rel="stylesheet" href="fonts/untitled-font-1/styles.css">
     <link rel="stylesheet" href="fonts/silkscreen/stylesheet.css">
 
     <link rel="shortcut icon" href="/favicon.ico">
@@ -67,26 +68,11 @@
         </div>
       </div>
 
-      <!--
-
-          The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-          If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-
-          So in the example below it'll be `step-2`.
-
-          The hash part of the url when this step is active will be `#/step-2`.
-
-          You can also use `#step-2` in a link, to point directly to this particular step.
-
-          Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-          Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-
-      -->
       <div id="who-am-i" class="step slide" data-x="0" data-y="-1500">
         <div class="row text-center">
           <div class="col-lg-12">
             <h1>WHO AM I?</h1>
-            <img class="" src="images/face.png" height="300px">
+            <div class="icon-face-1"></div>
             <h3>Full Stack Developer</h3>
             <h3>@ HPE Live Network</h3>
             <h3>idan.cohen@hpe.com</h3>
@@ -137,7 +123,7 @@
           element should be rotated by 90 degrees clockwise.
 
       -->
-      <div id="mona" class="step" data-x="850" data-y="1800" data-rotate="90" data-scale="2">
+      <div id="mona" class="step" data-x="3000" data-y="-1000" data-rotate="90" data-scale="3">
         <div class="row">
           <div class="col-lg-6">
             <img src="images/mona.jpg">
@@ -148,7 +134,7 @@
         </div>
       </div>
 
-      <div id="pixelation" class="step" data-x="800" data-y="1300" data-rotate="270" data-z="-3000" data-scale="1">
+      <div id="pixelation" class="step" data-x="3000" data-y="-2000" data-rotate="270" data-z="-3000" data-scale="1">
         <div class="row">
           <div class="col-lg-7">
             <h1>Pixelation</h1>
@@ -159,11 +145,11 @@
         </div>
       </div>
 
-      <div id="microsoft" class="step" data-x="700" data-y="850" data-rotate="180" data-z="-3000" data-scale="1" data-rotate-x="70" data-rotate-y="0">
+      <div id="microsoft" class="step" data-x="2900" data-y="-2450" data-rotate="180" data-z="-3000" data-scale="1" data-rotate-x="70" data-rotate-y="0">
         <div><sup>*</sup> Except for Microsoft, who<br> &nbsp; paid $2.5 billion for it</div>
       </div>
 
-      <div id="andy" class="step" data-x="850" data-y="3500" data-rotate="90" data-scale="1">
+      <div id="andy" class="step" data-x="5000" data-y="-1650" data-rotate="90" data-scale="2">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <img src="images/andy.jpg">
@@ -171,7 +157,7 @@
         </div>
       </div>
 
-      <div id="juggle" class="step" data-x="-1000" data-y="3500" data-rotate="0" data-scale="1" data-z="-2000">
+      <div id="juggle" class="step" data-x="5300" data-y="-3500" data-rotate="0" data-scale="1" data-z="-2000">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <img src="images/juggle.png">
@@ -179,7 +165,7 @@
         </div>
       </div>
 
-      <div id="font1" class="step" data-x="4000" data-y="3000" data-rotate="180" data-scale="2">
+      <div id="font1" class="step" data-x="0" data-y="1500" data-rotate="180" data-scale="2">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3 text-center">
             <div id="flipper">
@@ -215,7 +201,7 @@
         </div>
       </div>
 
-      <div id="font2" class="step" data-x="3500" data-y="1500" data-rotate="270" data-scale="2">
+      <div id="font2" class="step" data-x="2500" data-y="1500" data-rotate="270" data-scale="2">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <span class="icon icon-hplogo second-icon"></span>
@@ -227,13 +213,171 @@
         </div>
       </div>
 
-      <div id="font3" class="step" data-x="3500" data-y="5000" data-rotate="0" data-scale="2">
+      <div id="font3" class="step" data-x="4500" data-y="1500" data-rotate="0" data-scale="2">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <span class="icon icon-hplogo"></span>
             <div class="css-code">
               transform: <span class="css-function">rotate</span>(<span class="css-value">90deg</span>)<span class="nekudapsik">;</span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dancing" class="step" data-x="6500" data-y="0" data-rotate="90" data-scale="2">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="page">
+              <div id="container">
+
+                <div id="foot" class="left">
+                  <div id="f1"></div>
+                  <div id="f2"></div>
+
+
+                  <div id="leg1" class="first">
+                    <div id="leg1" class="next1">
+                      <div id="leg1" class="next1">
+                        <div id="leg1" class="next1">
+                          <div id="leg1" class="next1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="foot" class="right">
+                  <div id="f1"></div>
+                  <div id="f2"></div>
+
+                  <div id="leg2" class="first">
+                    <div id="leg2" class="next2">
+                      <div id="leg2" class="next2">
+                        <div id="leg2" class="next2">
+                          <div id="leg2" class="next2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="body">
+                  <div id="b1"></div>
+                  <div id="b2"></div>
+                  <div id="b3"></div>
+                  <div id="head">
+                    <div id="h1"></div>
+                    <div id="h2"></div>
+                    <div id="h3"></div>
+                    <div id="h4"></div>
+                    <div id="h5"><span></span></div>
+                    <div id="eyes">
+                      <div id="e">
+                        <div id="e1">
+                          <div id="eye"></div>
+                          <span></span>
+                        </div>
+                        <div id="e2">
+                          <div id="eye"></div>
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="mouth">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <div id="m1"></div>
+                      <div id="m2"></div>
+                    </div>
+                  </div>
+
+                  <div id="b4"></div>
+                  <div id="b5">
+                    <div id="b51">
+                      <div id="b51">
+                        <div id="b51">
+                          <div id="b51">
+                            <div id="ab">
+                              <div id="a1"></div>
+                              <div id="a2"></div>
+                              <div id="a3" class="a31"></div>
+                              <div id="a3" class="a32"></div>
+                              <div id="a3" class="a33"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="b6"></div>
+                  <div id="b7">
+                    <div id="b71">
+                      <div id="b71">
+                        <div id="b71">
+                          <div id="b71">
+                            <div id="ac">
+                              <div id="a1"></div>
+                              <div id="a2"></div>
+                              <div id="a3" class="a31"></div>
+                              <div id="a3" class="a32"></div>
+                              <div id="a3" class="a33"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="b8">
+                    <span></span>
+                  </div>
+                  <div id="b9"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="accessibility" class="step slide" data-x="-1000" data-y="-2500">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h1>accessibility</h1>
+            <h3>What You See</h3>
+            <div class="icon icon-hplogo"></div>
+            <h3>What They Hear</h3>
+            <div class="sample">\e01e</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="accessibility-solution" class="step slide" data-x="0" data-y="-2500">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h1>accessibility solution</h1>
+            <h3>What Developer Use</h3>
+            <pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>icon</span><span style='color:#274796; '> </span><span style='color:#074726; '>name</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"logo"</span><span style='color:#274796; '> </span><span style='color:#074726; '>alt</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"hpe logo"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>icon</span><span style='color:#a65700; '>></span>
+</pre>
+            <h3>What Markup is Created</h3>
+            <pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"icon-hplogo"</span><span style='color:#274796; '> aria-</span><span style='color:#074726; '>hidden</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"true"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>span</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"sr-only"</span><span style='color:#a65700; '>></span>hpe logo<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>span</span><span style='color:#a65700; '>></span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="resources" class="step slide" data-x="1000" data-y="-2500">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h1>RESOURCES</h1>
+            <ul>
+              <li><a href="https://icomoon.io">icomoon.io</a></li>
+              <li><a href="https://glyphter.com/">glyphter.com</a></li>
+              <li><a href="http://fontastic.me/">fontastic.me</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -247,10 +391,6 @@
           positioned far away from us (by 3000px).
 
       -->
-      <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
-      </div>
-
       <!--
 
           This step here doesn't introduce anything new when it comes to data attributes, but you
@@ -271,40 +411,6 @@
           Only one current step has the `present` class.
 
       -->
-      <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-      </div>
-
-      <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-      </div>
-
-      <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-      </div>
-
-      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-      </div>
-
-      <!--
-
-          And the last one shows full power and flexibility of impress.js.
-
-          You can not only position element in 3D, but also rotate it around any axis.
-          So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-          10 degrees (clockwise) around Y axis.
-
-          You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-          as `data-rotate` (these two are basically aliases).
-
-      -->
-      <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-      </div>
-
       <!--
 
           So to summarize of all the possible attributes used to position presentation steps, we have:
@@ -320,7 +426,7 @@
           CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
 
       -->
-      <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+      <div id="overview" class="step" data-x="3000" data-y="-500" data-scale="10">
       </div>
 
     </div>

@@ -335,8 +335,11 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
+            'images/*.{jpg,png,gif}',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'fonts/{,*/}*.*',
+            'fonts/hpln_icon_font/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -377,7 +380,7 @@ module.exports = function (grunt) {
       dist: [
         'babel',
         'sass',
-        'imagemin',
+        //'imagemin',
         'svgmin'
       ]
     }

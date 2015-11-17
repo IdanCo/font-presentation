@@ -58,25 +58,14 @@ strong {
 }
 
 #who-am-i {
-  img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    //opacity: 0;
+
+  .icon-face-1 {
+    font-size: 300px;
+    margin: 30px;
+    color: $color-primary;
   }
 
-  &.present {
-    img {
-      //animation-duration: 1s;
-      //animation-fill-mode: both;
-      //animation-name: fadeIn;
-    }
-  }
 
-  &.past {
-    img {
-      //opacity: 1;
-    }
-  }
 }
 
 #icon-font {
@@ -255,10 +244,14 @@ strong {
     text-transform: capitalize;
   }
   #flipper {
-    animation: zoomIn 15s ease-in 0s 1;
     width: 400px;
     height: 400px;
     position: relative;
+  }
+  &.present {
+    #flipper {
+      animation: zoomIn 15s ease-in 0s 1;
+    }
   }
 }
 
@@ -294,6 +287,7 @@ strong {
     color: $color-primary;
     padding: 1rem;
     font-size: 1.5rem;
+    opacity: 0;
     span {
       color: gray;
     }
@@ -312,6 +306,7 @@ strong {
       animation-fill-mode: forwards;
     }
     .css-code {
+      opacity: 1;
       animation: zoomInDown 1.5s ease-out 10s 1;
       animation-fill-mode: both;
     }
@@ -345,6 +340,7 @@ strong {
     padding: 1rem;
     font-size: 1.5rem;
     color: gray;
+    opacity: 0;
     .css-function {
       color: #FFD144;
     }
@@ -361,8 +357,61 @@ strong {
       animation-fill-mode: both;
     }
     .css-code {
+      opacity: 1;
       animation: zoomInDown 1.5s ease-out 17s 1;
       animation-fill-mode: both;
+    }
+  }
+  &.past {
+    .css-code {
+      opacity: 1;
+    }
+  }
+}
+
+#accessibility {
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  div.icon, div.sample {
+    width: 50%;
+    border: 1px solid #CCCCCC;
+    padding: 30px;
+    font-family: Arial;
+    margin: 0 auto 50px;
+    color: $color-primary;
+  }
+  .icon {
+    font-size: 50px;
+  }
+}
+
+#accessibility-solution {
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  pre {
+    width: 80%;
+    font-size: 20px;
+    padding: 30px;
+    margin: 0 auto 50px;
+    text-align: left;
+  }
+}
+
+#resources {
+  ul {
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 100px;
+    li {
+      margin-bottom: 20px;
+    }
+    a {
+      text-shadow: none;
+      color: $color-primary;
     }
   }
 }
